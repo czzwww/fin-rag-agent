@@ -1,0 +1,16 @@
+version: "3"
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_BASE_URL=${OPENAI_BASE_URL}
+      - ZHIPU_API_KEY=${ZHIPU_API_KEY}
+      - EMBED_PROVIDER=${EMBED_PROVIDER}
+      - EMBED_MODEL=${EMBED_MODEL}
+    restart: unless-stopped
+    volumes:
+      - ./storage:/app/storage
+      - ./data:/app/data

@@ -1,0 +1,10 @@
+# Python-generated files
+.env
+__pycache__/
+*.pyc
+.venv/
+storage/
+data/reports/
+*.db
+# Virtual environments
+.venv
