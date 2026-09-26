@@ -1,0 +1,6 @@
+- 一句话定位 + 与通用知识库（Ima/NotebookLM）的差异
+- 架构图（双通道）
+- 技术亮点：表格解析、结构化抽取、混合检索+重排、工具数值推理、增量入库、评测
+- 快速开始：`uv sync` → 填 `.env` → `uv run python -m app.ingest` → `uv run python main.py`
+- 评测结果表（引用 metrics.json 真实数字）
+- 免责声明
